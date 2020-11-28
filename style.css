@@ -1,0 +1,217 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Bree Serif', serif;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    /* background-color: cadetblue; */
+    box-shadow: 0px 2px 4px rgb(0, 0, 0);
+}
+
+#logo {
+    width: 100px;
+    height: 80px;
+    /* border: 1px solid black; */
+    float: left;
+    margin: 5px 0px 0px 10px;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+
+#menu {
+    width: 430px;
+    height: 50px;
+    float: right;
+    margin: 20px 31px 0px 0px;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0px 0px 0px 32px;
+}
+
+#menu li {
+    float: left;
+    margin: 17px 31px 0px 0px
+}
+
+#menu a {
+    text-decoration: none;
+    color: rgb(129, 180, 197);
+    font-size: 15px;
+}
+
+#menu a:hover {
+    padding: 2px 5px;
+    background-color: coral;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /* border-bottom: 2px solid coral; */
+}
+
+#bg {
+    width: 100%;
+    height: 500px;
+    background: url(pic/bg2.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+}
+
+
+#bg-text  {
+    width: 200px;
+    height: 50px;
+    padding: 0px 20px;
+    background-color: rgb(0, 110, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 4px 8px 9px 2px rgba(0, 0, 0, 0.719);
+    /* border-right: 2px solid lightgray; */
+    /* border-bottom: 2px solid lightgray; */
+    /* border-left: 2px solid lightgray; */
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-radius: 14px; 
+    
+}
+
+.slide {
+    font-family: 'Nerko One', cursive;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    /* position: absolute; */
+}
+
+.anime{
+    font-size: 60px;
+
+}
+
+.slide:first-child {
+    animation: slider 4s  ease infinite;
+
+}
+
+@keyframes slider {
+    0% {
+        margin-top: 0px;
+    }
+    25% {
+        margin-top: -65px;
+    }
+    50% {
+        margin-top: -125px;
+    }
+    75% {
+        margin-top: -185px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+#content1 {
+    width: 600px;
+    min-height: 600px;
+    background-color: tomato;
+    float: left;
+    margin: 10px 0px 0px 10px;
+    border-radius: 10px;
+
+}
+
+#content2 {
+    width: 600px;
+    min-height: 600px;
+    background-color: rgb(0, 183, 255);
+    float: right;
+    margin: 10px 10px 0px 0px;
+    border-radius: 10px;
+
+}
+
+.cards-header {
+    text-transform: uppercase;
+    font-family: 'Candal', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid  whitesmoke;
+}
+
+.container {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 230px;
+    height: 350px;
+    margin: 10px 0px 0px 0px;
+    position: relative;
+    border-radius: 10px;
+    /* opacity: 0; */
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.hover-text {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(0, 190, 165);
+    position: absolute;
+    bottom: 0px;
+    color: rgb(0, 124, 161);
+    text-align: center;
+    font-size: 20px;
+    opacity: 0;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+
+.card:hover {
+    box-shadow: 11px 8px 8px 2px black;
+}
+
+.card:hover .hover-text {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.text {
+    width: 100%;
+    height: 30px;
+}
+
+.text h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+}
+
